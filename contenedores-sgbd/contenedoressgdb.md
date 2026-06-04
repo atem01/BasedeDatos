@@ -50,3 +50,12 @@ docker run -d --name server-posgresg3 \
 sha256
 
 ```
+### Contenedores de SQLServer con volumen 
+```
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=P@ssw0rd" \
+   -u 0 \
+   -p 1451:1433 --name SQLServerG1 \
+   -d -v vol-sqlserverG3:/var/opt/mssql/data \
+   sha256:88ac6849d0a18a738aec613d9c23259765325c1a2370e17ac544bbbe36509f55
+   ```
+   
