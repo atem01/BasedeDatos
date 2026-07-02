@@ -115,3 +115,60 @@ Una empresa se dedica a la venta de productos al por mayor, y necesita registrar
 ### Solución ejercicio 4
 
 ![Solución Ej4](/ima/Eje4.png)
+
+## Ejercicio 5
+
+Una empresa necesita administrar la información de sus empleados, departamentos, proyectos y dependientes.
+
+> De los empleados necesita almacenar:
+
+- NSS (Número de Seguro Social)
+- Nombre
+- Apellido
+- Fecha de nacimiento
+- Dirección
+- Sexo
+- Salario
+
+> De los departamentos necesita almacenar:
+
+- Número del departamento
+- Nombre del departamento
+- Ubicación
+- Fecha de inicio de administración
+
+> De los proyectos necesita almacenar:
+
+- Número del proyecto
+- Nombre del proyecto
+- Ubicación
+
+> De los dependientes necesita almacenar:
+
+- Nombre del dependiente
+- Fecha de nacimiento
+- Sexo
+
+> De la relación de trabajo en proyectos necesita almacenar:
+
+- Horas trabajadas por el empleado en cada proyecto
+
+### Reglas del negocio:
+
+1. Un departamento puede tener muchos empleados.
+2. Cada empleado pertenece a un solo departamento.
+3. Un empleado puede supervisar a varios empleados.
+4. Un empleado puede tener cero o un supervisor.
+5. Un departamento administra muchos proyectos.
+6. Cada proyecto es administrado por un solo departamento.
+7. Un empleado puede trabajar en varios proyectos.
+8. Un proyecto puede tener varios empleados trabajando en él.
+9. La relación "Trabaja en" debe almacenar las horas trabajadas.
+10. Un empleado puede tener cero o muchos dependientes.
+11. Cada dependiente pertenece a un solo empleado.
+12. Un dependiente no puede existir sin un empleado asociado.
+13. Un proyecto puede existir aunque no tenga empleados asignados.
+
+### Solución ejercicio 5
+
+![Solución Ej5](/ima/Eje5.png)
