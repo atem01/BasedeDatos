@@ -127,4 +127,77 @@ values ('asdis546','Ricarda','Sonric');
 
 select * from profesor;
 
---restriccion UNIQUE
+--Restriccion UNIQUE
+
+create table categoria(
+	caegoria_id int not null primary key identity(1,1),
+	nombre varchar(20) not null unique,
+	activo bit not null 
+);
+go
+
+insert into categoria
+values (upper(' carnes_firas'), 1);
+
+insert into categoria
+values (upper(' carnes_firas'), 1);
+
+drop table categoria;
+go
+
+-----
+
+create table categoria(
+	categoria_id int not null identity(1,1)
+	constraint pk_categoria
+	primary key (categoria_id),
+	nombre varchar(20) not null
+	constraint uq_categoria_nombre
+	unique,
+	activo bit not null
+);
+go
+
+drop table categoria;
+go
+
+create table categoria(
+	categoria_id int not null identity(1,1),
+	nombre varchar(20) not null,
+	activo bit not null,
+	constraint pk_categoria
+	primary key (categoria_id),
+	constraint uq_categoria_nombre
+	unique (nombre)
+);
+go
+
+drop table categoria;
+go
+
+
+-- Resticcion default
+
+create table categoria(
+	categoria_id int not null identity(1,1),
+	nombre varchar(20) not null,
+	activo bit not null default 1,
+	constraint pk_categoria
+	primary key (categoria_id),
+	constraint uq_categoria_nombre
+	unique (nombre)
+);
+go
+
+insert into categoria (nombre,activo)
+values ('carnes Frias',default);
+
+insert into categoria (nombre)
+values ('lacteos');
+
+select * from categoria
+go
+
+-- TODO: crear tablas de las otras dos formas 
+
+-- TODO: CHECK
