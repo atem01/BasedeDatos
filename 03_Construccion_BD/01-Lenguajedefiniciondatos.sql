@@ -427,4 +427,6 @@ create table proveedor (
 	delete from proveedor
 	where proveedor_id =1;
 
+	-- Alter Table 
+
 	---todo: se debe que revisar el on uptade no action y las demas integridades referenciales

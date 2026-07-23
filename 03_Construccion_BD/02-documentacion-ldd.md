@@ -115,3 +115,16 @@ automaticamente a minusculas. Con **snake_case** evita problemas de mayusculas y
 - ck (check)
 - df (Default)
 - ix (index)
+
+## Alter Table
+permite modificar una tabla existente 
+
+Puede:
+
+- Agragar columnas 
+- Eliminar columnas
+- Modificar columnas
+- Agreagr restricciones0
+
+commit se terminaron los temas de SQL-LDD con los comandos CREATE, ALTER, DROP, aplicados a Tablas y restriciones.
+se Comenzo con el trabajo de creacion de un diagrama logico a fisico aplicado cada una de las instrucciones SQL.
