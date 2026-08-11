@@ -70,8 +70,8 @@ CREATE TABLE oficina (
     objetivo DECIMAL(10,2) NOT NULL,
     venta DECIMAL(10,2) NOT NULL,
     created_at DATETIME2 NOT NULL
-        CONSTRAINT df_oficina_created_at
-        DEFAULT SYSDATETIME(),
+			CONSTRAINT df_oficina_created_at
+			DEFAULT SYSDATETIME(),
     updated_at DATETIME2 NOT NULL
         CONSTRAINT df_oficina_update_at
         DEFAULT SYSDATETIME(),
@@ -205,4 +205,4 @@ GO
 ```
 
 ## Diagrama
-![Diagrama 8]()
+![Diagrama 8](/img/construccion/8Comercializadora.jpeg)
